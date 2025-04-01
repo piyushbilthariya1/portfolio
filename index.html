@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- AOS CSS (for animation if not already included) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <main>
+      <div class="frame">
+        <header>
+          <a href="#index.html" class="logo">Xenric</a>
+          <nav>
+            <!-- <a href="">Home</a> -->
+            <a href="#about">About</a>
+            <a href="#Strengths">Strengths</a>
+            <a href="#Projects">Projects</a>
+          </nav>
+          <div class="right-box">
+            <a href="#contact" class="btn">Contact!</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+          </div>
+        </header>
+        <section id="hero">
+          <div class="hero">
+            <div class="text-box">
+              <p>
+                Hello, I am Xenric the font-end spider!
+                <span>🕷️</span>
+                <em>I'm here to fix your bugs.</em>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="about">
+          <div class="about">
+            <h1 class="ah1">About Me!</h1>
+            <p>
+              Hey, I’m Xenric — an engineering student, designer, and creativity
+              enthusiast working remotely from a cozy town in India. I’m
+              passionate about web development, app creation, and bot building,
+              and I love making the web a more connected and less boring place.
+              When I’m not coding or designing, you’ll probably find me
+              exploring new ideas, experimenting with fresh tech, or adding a
+              little magic to the digital world. Let’s connect and build
+              something awesome together!
+            </p>
+          </div>
+        </section>
+        <div class="techusd">
+          <h1>Tech I Use!</h1>
+        </div>
+        <section id="clients" class="clients section">
+          <!-- <div class="container" data-aos="fade-up" data-aos-delay="100"> -->
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 800
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 4,
+                    "spaceBetween": 40
+                  },
+                  "480": {
+                    "slidesPerView": 4,
+                    "spaceBetween": 60
+                  },
+                  "640": {
+                    "slidesPerView": 5,
+                    "spaceBetween": 80
+                  },
+                  "992": {
+                    "slidesPerView": 6,
+                    "spaceBetween": 120
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img src="assets/img/clients/1.png" class="img-fluid" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/clients/2.png" class="img-fluid" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/clients/3.png" class="img-fluid" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/clients/4.png" class="img-fluid" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/clients/5.png" class="img-fluid" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/clients/6.png" class="img-fluid" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/clients/7.png" class="img-fluid" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/clients/8.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </section>
+        <section id="Strengths">
+          <div class="strengths">
+            <h1>Strengths!</h1>
+          </div>
+          <div class="gbox">
+            <div class="card">
+              <div>
+                <div class="heading">
+                  <div class="bx bxl-react" id="ico"></div>
+                  <h1>
+                    Frontend Dev<br />
+                    React, Next.Js.
+                  </h1>
+                </div>
+                <p>
+                  Proficient in frontend development with expertise in React and
+                  Next.js, creating fast, responsive, and dynamic web
+                  applications
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <div class="heading">
+                  <div class="bx bx-code-alt" id="ico"></div>
+                  <h1>
+                    Software<br />
+                    Development.
+                  </h1>
+                </div>
+                <p>
+                  Skilled in software development using Python and JavaScript,
+                  with a focus on building scalable, high-performance
+                  applications and ensuring clean, maintainable, and efficient
+                  code.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <div class="heading">
+                  <div class="bx bxl-css3" id="ico"></div>
+                  <h1>
+                    Web Design<br />
+                    CSS3, Figma.
+                  </h1>
+                </div>
+                <p>
+                  Experienced in web design, specializing in crafting intuitive
+                  and visually stunning interfaces using CSS3 and Figma to
+                  enhance user experiences
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="Projects">
+          <div class="projects" id="projects">
+            <h1>Projects!</h1>
+          </div>
+          <div class="probox">
+            <div class="cards2">
+              <img src="./assets/img/workinprogress.jpg" alt="img" />
+              <h1>#Coming Soon!</h1>
+            </div>
+            <div class="cards2">
+              <img src="./assets/img/workinprogress.jpg" alt="img" />
+              <h1>#Coming Soon!</h1>
+            </div>
+            <div class="cards2">
+              <img src="./assets/img/workinprogress.jpg" alt="img" />
+              <h1>#Coming Soon!</h1>
+            </div>
+            <div class="cards2">
+              <img src="./assets/img/workinprogress.jpg" alt="img" />
+              <h1>#Coming Soon!</h1>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="contact">
+            <h1>Contact Me!</h1>
+          </div>
+          <form>
+            <div class="container">
+              <div class="form-row">
+                <div class="row1">
+                  <div class="form-group1">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Your Name"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="form-group1">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Your@email.com"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group2">
+                <label for="budget">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  placeholder="Subject"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  rows="auto"
+                  placeholder="Message"
+                  autocomplete="off"
+                ></textarea>
+              </div>
+              <button class="submit-btn" type="submit">Submit!</button>
+            </div>
+          </form>
+        </section>
+        <footer>
+          <div class="links">
+            <a href="" class="bx bxl-instagram"></a>
+            <a href="" class="bx bxl-github"></a>
+            <a href="" class="bx bxl-linkedin"></a>
+            <a href="" class="bx bxl-discord-alt"></a>
+            <a href="" class="bx bxl-twitter"></a>
+          </div>
+          <div><h1 class="madeit">Made With Love & Code.</h1></div>
+          <div class="madeit2"><h1>© Xenric 2025 - Design By Xenric</h1></div>
+        </footer>
+
+        <div id="preloader"></div>
+
+        <a href="#" id="scroll-top" class="scroll-top"
+          ><i class="bx bx-up-arrow-alt"></i
+        ></a>
+      </div>
+    </main>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- AOS JS (for animation) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(); // Initialize AOS animations
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const swiperConfig = document.querySelector(".swiper-config");
+        const config = JSON.parse(swiperConfig.innerHTML);
+
+        new Swiper(".init-swiper", config);
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuIcon = document.getElementById("menu-icon");
+        const nav = document.querySelector("nav");
+
+        menuIcon.addEventListener("click", function () {
+          nav.classList.toggle("active");
+        });
+      });
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
